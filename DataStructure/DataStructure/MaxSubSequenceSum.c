@@ -26,10 +26,9 @@ int maxSubsequenceSum_ON3(const int sequence[], int N){
         }
     }
     return maxSum;
-<<<<<<< Updated upstream
+
 }
-=======
-}
+
 
 int maxSubsequenceSum_ON2(const int sequence[], int N){
     if (sequence == NULL || N<=0) {
@@ -49,4 +48,22 @@ int maxSubsequenceSum_ON2(const int sequence[], int N){
     }
     return maxSum;
 }
->>>>>>> Stashed changes
+
+int maxSubsequenceSum_ON1(const int sequence[], int N){
+    if (sequence == NULL || N<=0) {
+        printf("error sequence == NULL || N<=0 in maxSubsequenceSum_ON1\n");
+    }
+    int currentSum, maxSum, i;
+    maxSum = 0;
+    currentSum = 0;
+    for (i = 0; i < N; i++) {
+        currentSum += sequence[i];
+        if (currentSum > maxSum) {
+            maxSum = currentSum;
+        }else if (currentSum < 0) {
+            currentSum = 0;
+        }
+    }
+    return maxSum;
+
+}

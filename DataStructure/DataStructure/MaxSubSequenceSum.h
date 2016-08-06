@@ -10,9 +10,6 @@
 
 #include <stdio.h>
 int maxSubsequenceSum_ON3(const int sequence[], int N);
-<<<<<<< Updated upstream
-
-=======
 int maxSubsequenceSum_ON2(const int sequence[], int N);
->>>>>>> Stashed changes
+int maxSubsequenceSum_ON1(const int sequence[], int N);
 #endif /* MaxSubSequenceSum_h */
