@@ -1,5 +1,5 @@
 .DS_STORE
-*/*.xcodeproj 
+*.xcodeproj 
 # Object files
 *.o
 *.ko
