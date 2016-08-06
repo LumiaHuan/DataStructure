@@ -14,7 +14,8 @@ int main(int argc, const char * argv[]) {
     int N = sizeof(sequence) / sizeof(int);
     printIntArray(sequence, N);
     printf("Max subsequence sub is : %d\n", maxSubsequenceSum_ON3(sequence, N));
-    printf("Max subsequence sub O(N3) is : %d\n", maxSubsequenceSum_ON3(sequence, N));
+    printf("Max subsequence sub is : %d\n", maxSubsequenceSum_ON3(sequence, N));
+
     printf("Max subsequence sub O(N2) is : %d\n", maxSubsequenceSum_ON2(sequence, N));
     printf("Max subsequence sub O(N1) is : %d\n", maxSubsequenceSum_ON1(sequence, N));
 
