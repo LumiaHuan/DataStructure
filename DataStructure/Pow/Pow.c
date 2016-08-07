@@ -10,15 +10,12 @@ int isEven(int num);
 int pow_logn(int base, int power){
     if (power == 0) {
         return 1;
-    } else if(power == 1){
-        return base;
     }
     if (isEven(power)) {
         return pow_logn(base * base, power / 2);
     }else{
-        return pow_logn(base * base, power / 2) * base;
+        return pow_logn(base, power - 1) * base;
     }
-    pow()
 }
 
 int isEven(int num){
