@@ -7,7 +7,7 @@
 
 #include <stdio.h>
 #include "Pow.h"
-int main(){
+int main_Pow(){
     int base = 2;
     int power = 0;
     for (power = 0 ; power < 5; power++) {
