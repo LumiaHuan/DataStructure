@@ -141,6 +141,12 @@ void deleteList(Node* header){
     header->next = NULL;
 }
 
+void freeList(Node* header){
+    deleteList(header);
+    free(header);
+    header = NULL;
+}
+
 void printList(Node* header){
     if (header == NULL) {
         printf("Error printList is NULL\n");

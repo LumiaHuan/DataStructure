@@ -37,5 +37,9 @@ Node* radixSort(Node* header, int radix, int stepNum){
         }
         printList(retList);
     }
+    //Clear buckets
+    for (i = 0; i < radix; i++) {
+        freeList(buckets[i]);
+    }
     return retList;
 }
