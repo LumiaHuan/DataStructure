@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include "List.h"
 
-int main(){
+int main_List(){
     Node* header = createList();
     int i;
     printList(header);

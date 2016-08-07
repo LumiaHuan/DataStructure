@@ -9,7 +9,10 @@
 #define List_h
 
 #include <stdio.h>
-struct _Node;
+struct _Node{
+    int data;
+    struct _Node* next;
+};
 typedef struct _Node Node;
 Node* createList();
 int isEmpty(Node* header);
@@ -21,4 +24,5 @@ void insertNode(int insertValue, Node* pos);
 void insertPos(int insertValue, Node* header, int pos);
 void deleteList(Node* header);
 void printList(Node* header);
+Node* copyList(Node* header);
 #endif /* List_h */

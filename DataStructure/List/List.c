@@ -7,10 +7,6 @@
 
 #include "List.h"
 #include <stdlib.h>
-struct _Node{
-    int data;
-    struct _Node* next;
-};
 
 Node* createList(){
     Node* header = (Node*)malloc(sizeof(Node));
@@ -157,5 +153,15 @@ void printList(Node* header){
         tmp = tmp->next;
     }
     printf("NULL\n");
+}
+
+Node* copyList(Node* header){
+    Node* retList = createList();
+    Node* tmp = header->next;
+    while (tmp != NULL) {
+        insertNode(tmp->data, findLast(retList));
+        tmp = tmp->next;
+    }
+    return retList;
 }
 
