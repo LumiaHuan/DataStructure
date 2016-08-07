@@ -9,7 +9,7 @@
 #include "MaxSubSequenceSum.h"
 #include "ArrayTools.h"
 
-int main00(int argc, const char * argv[]) {
+int main_MaxSubSequenceSum(int argc, const char * argv[]) {
     int sequence[] = {-2, 1, 1, 2, -3};
     int N = sizeof(sequence) / sizeof(int);
     printIntArray(sequence, N);
