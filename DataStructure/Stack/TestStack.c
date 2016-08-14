@@ -9,7 +9,7 @@
 #include "Stack.h"
 #include "ArrayTools.h"
 
-int main(){
+int main_Stack(){
     Stack* stack = createStack();
     printIntStack(stack);
     pop(stack);

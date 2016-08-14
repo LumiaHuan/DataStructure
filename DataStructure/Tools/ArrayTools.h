@@ -10,6 +10,8 @@
 
 #include <stdio.h>
 #include "Stack.h"
+#include "StackArray.h"
 void printIntArray(const int* const array, int N);
 void printIntStack(const Stack* stack);
+void printIntArrayStack(const ArrayStack* stack);
 #endif /* ArrayTools_h */

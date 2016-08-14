@@ -22,3 +22,16 @@ void printIntStack(const Stack* stack){
         stack = stack->next;
     }
 }
+
+void printIntArrayStack(const ArrayStack* stack){
+    if (stack == NULL) {
+        printf("Error: printIntArrayStack stack == NULL\n");
+        return;
+    }
+    printf(" - \n");
+    int i;
+    for (i = stack->topIndex; i>=0; i--) {
+        printf(" %d \n", stack->array[i]);
+        printf(" - \n");
+    }
+}
