@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include "Sort.h"
 #include "List.h"
-int main(){
+int main_Sort(){
     Node* waitToSort = createList();
     int array[10] = {64, 8, 216, 512, 27, 729, 0, 1, 343, 125};
     int i;

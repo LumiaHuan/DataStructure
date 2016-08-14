@@ -26,7 +26,7 @@ int main_List(){
     printList(header);
     deleteList(header);
     printList(header);
-    printf("isEmpty:%d\n", isEmpty(header));
+    printf("isListEmpty:%d\n", isListEmpty(header));
     insertNode(0, header);
     printList(header);
     insertNode(1, findPos(0, header));

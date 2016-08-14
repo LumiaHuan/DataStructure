@@ -9,5 +9,7 @@
 #define ArrayTools_h
 
 #include <stdio.h>
+#include "Stack.h"
 void printIntArray(const int* const array, int N);
+void printIntStack(const Stack* stack);
 #endif /* ArrayTools_h */

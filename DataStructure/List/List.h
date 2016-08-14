@@ -9,13 +9,9 @@
 #define List_h
 
 #include <stdio.h>
-struct _Node{
-    int data;
-    struct _Node* next;
-};
-typedef struct _Node Node;
+#include "Node.h"
 Node* createList();
-int isEmpty(Node* header);
+int isListEmpty(Node* header);
 Node* findPos(int pos, Node* header);
 Node* findNode(int findValue, Node* header);
 Node* findLast(Node* header);

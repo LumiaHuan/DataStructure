@@ -18,9 +18,9 @@ Node* createList(){
     return header;
 }
 
-int isEmpty(Node* header){
+int isListEmpty(Node* header){
     if (header == NULL) {
-        printf("Error isEmpty list is NULL\n");
+        printf("Error isListEmpty list is NULL\n");
         return -1;
     }
     return header->next == NULL;
@@ -71,7 +71,7 @@ Node* findLast(Node* list){
 }
 
 void deleteNode(int deleteValue, Node* header){
-    if (header == NULL || isEmpty(header)) {
+    if (header == NULL || isListEmpty(header)) {
         printf("Error deleteNode list is NULL");
         return;
     }

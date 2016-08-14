@@ -13,3 +13,12 @@ void printIntArray(const int* const array, int N){
     }
     printf("\n");
 }
+
+void printIntStack(const Stack* stack){
+    printf(" - \n");
+    while (!isStackEmpty(stack)) {
+        printf(" %d \n", top(stack)->data);
+        printf(" - \n");
+        stack = stack->next;
+    }
+}
