@@ -10,7 +10,7 @@
 #include "StackArray.h"
 #include "ArrayTools.h"
 
-int main(){
+int main_StackArray(){
     ArrayStack* stack = createArrayStack(10);
     printIntArrayStack(stack);
     pop_ArrayStack(stack);
