@@ -35,3 +35,26 @@ void printIntArrayStack(const ArrayStack* stack){
         printf(" - \n");
     }
 }
+
+void printIntArrayQueue(const ArrayQueue* queue){
+    if (queue == NULL) {
+        printf("Error: printIntArrayQueue queue == NULL\n");
+        return;
+    }
+    if (isArrayQueueEmpty(queue)) {
+        printf("Queue is Empty\n");
+        return;
+    }
+    int i = queue->head;
+    do {
+        printf("%d", queue->data[i]);
+        if (i != queue->rear) {
+            printf("<-");
+        }
+        i++;
+        if (i >= queue->maxSize) {
+            i = i%queue->maxSize;
+        }
+    } while (i != (queue->rear+1)%queue->maxSize);
+    printf("\n");
+}

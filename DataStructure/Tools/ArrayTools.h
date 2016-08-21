@@ -11,7 +11,10 @@
 #include <stdio.h>
 #include "Stack.h"
 #include "StackArray.h"
+#include "ArrayQueue.h"
 void printIntArray(const int* const array, int N);
 void printIntStack(const Stack* stack);
 void printIntArrayStack(const ArrayStack* stack);
+void printIntArrayQueue(const ArrayQueue* queue);
+
 #endif /* ArrayTools_h */

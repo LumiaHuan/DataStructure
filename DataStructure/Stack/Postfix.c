@@ -125,7 +125,7 @@ char* infix2Postfix(const char* infix, unsigned long length){
     return postfix;
 }
 
-int main(){
+int main_Postfix(){
     const char* infix = "(1+2)*4-2*6/2";
     size_t length = strlen(infix);
     char* postfix = infix2Postfix(infix, length+1);
