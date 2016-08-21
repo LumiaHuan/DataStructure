@@ -54,7 +54,7 @@ int isBalance(char* str){
     return 1;
 }
 
-int main(){
+int main_BalanceSymbol(){
     char* str = "(1+2)-(2*(4)+2))";
     int balanced = isBalance(str);
     if (balanced == -1) {
