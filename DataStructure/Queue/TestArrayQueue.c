@@ -9,7 +9,7 @@
 #include "ArrayQueue.h"
 #include "ArrayTools.h"
 
-int main(){
+int main_ArrayQueue(){
     ArrayQueue* queue = createArrayQueue(10);
     printIntArrayQueue(queue);
     enArrayQueue(queue, 0);
