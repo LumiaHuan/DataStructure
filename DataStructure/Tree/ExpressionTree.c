@@ -37,7 +37,7 @@ TreeNode* createExpressionTree(){
     return root;
 }
 
-int main(){
+int main_ExpressionTree(){
     TreeNode* root = createExpressionTree();
     postOrderTraversal_expression(root);
     return 0;
